@@ -4,7 +4,7 @@ import Estuche from '../../../assets/images/estuche2.jpeg';
 export const CardDouble = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-4 p-4 bg-black ">
-      <div className="relative flex-1 rounded-xl overflow-hidden shadow shadow-white ml-0 mr-0 md:ml-12 md:mr-0">
+      <div className="relative flex-1 rounded-xl overflow-hidden shadow shadow-white">
         <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 sm:p-8 text-white">
           <div className="max-w-lg">
             <p className="text-sm font-semibold uppercase tracking-widest mb-1">
@@ -28,7 +28,7 @@ export const CardDouble = () => {
           className="w-full h-80 lg:h-[600px] object-cover"
         />
       </div>
-      <div className="relative flex-1 rounded-xl overflow-hidden shadow shadow-white ml-0 mr-0 md:ml-12 md:mr-0">
+      <div className="relative flex-1 rounded-xl overflow-hidden shadow shadow-white">
         <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 sm:p-8 text-white">
           <div className="max-w-lg">
             <p className="text-sm font-semibold uppercase tracking-widest mb-1">

@@ -3,6 +3,9 @@ import Video from '../../../assets/videos/principal.mp4';
 
 
 export const Featured = () => {
+
+
+  
   return (
     <div className="relative ">
       <div className='relative py-32 max-w-6xl mx-auto px-8 z-20 '>

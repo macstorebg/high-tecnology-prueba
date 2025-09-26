@@ -66,10 +66,7 @@ export const CardLarge = () => {
           />
         ))}
       </div>
-
-      {/* --- 3. Capa de Degradado Oscuro (para legibilidad del texto) --- */}
-      {/* De abajo hacia arriba, tal como en tu imagen */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-black/45 opacity-80 to-transparent"></div>
 
       {/* --- 4. Contenido (Texto y Botones) --- */}
       <div className="absolute inset-0 z-20 flex flex-col justify-end items-center text-center p-8 sm:p-12">
@@ -91,7 +88,7 @@ export const CardLarge = () => {
 
           {/* Botones */}
           <div className="flex justify-center space-x-4">
-            <button className="px-6 py-3 bg-blue-600 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+            <button className="py-3 px-8 inline-block cursor-pointer border-2 border-[#56DDA7] text-sm hover:bg-[#56DDA7] hover:text-black rounded-full font-semibold transition transform duration-300 hover:scale-110">
               {/* Shop {slide.subtitle} */}
               {slide.buttonPrimary}
             </button>

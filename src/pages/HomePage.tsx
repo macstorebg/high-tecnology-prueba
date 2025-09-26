@@ -1,28 +1,29 @@
-import { Navbar } from "../components/Header/Navbar"
-import { CardDouble } from "../components/main/banners/CardDouble"
-import { CardLarge } from "../components/main/banners/CardLarge"
-import { Featured } from "../components/main/featured/Featured"
-import { SpecialServices } from "../components/main/secction/SpecialServices"
-
+import { Footer, TopBar, CardDouble, CardLarge, Featured, Benefits, SpecialServices } from "../pages/index"
 
 export const HomePage = () => {
   return (
-    <div className="h-screen ">
+    <>
       <div className="mb-20">
         <Featured />
       </div>
       <div className="mb-20">
         <SpecialServices />
       </div>
-      <div>
+      <div className="mb-12">
         <CardDouble />
+      </div>
+      <div className="mb-12">
+        <TopBar />
       </div>
       <div className="mb-20">
         <CardLarge />
       </div>
-      <div>
-        <Navbar />
+      <div className='mb-20'>
+        <Benefits />
       </div>
-    </div>
-  )
-}
+      <div>
+        <Footer />
+      </div>
+    </>
+  );
+};
