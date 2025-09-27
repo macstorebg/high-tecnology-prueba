@@ -1,27 +1,6 @@
-// import { Link } from 'react-router-dom';
+import { accessories, computers, services } from './ListItem';
 import Logo from '../../assets/Logo-blanco.png';
-
-// --- Contenido de las listas (Definiciones o importaciones) ---
-const services = [
-  'Reemplazo de Pantallas',
-  'Remanufacturación',
-  'Cambio de Baterías',
-  'Reparación a Componente',
-];
-
-const accessories = [
-  'Cargadores Rápidos',
-  'Protectores de Pantalla',
-  'Audífonos Bluetooth',
-  'Fundas Protectoras',
-];
-
-const computers = [
-  'Mantenimiento General',
-  'Diagnóstico de Hardware',
-  'Reparación de Laptops',
-  'Venta de Componentes',
-];
+import { Botton } from '../ui/Botton';
 
 export const Footer = () => {
   return (
@@ -38,27 +17,14 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Servicios</h4>
             <ul className="space-y-2 text-sm">
-              {services.map((serviceName, index) => {
-                const baseMessage =
-                  'Hola, estoy interesado en el servicio de: ';
-                const encodedMessage = encodeURIComponent(
-                  baseMessage + serviceName,
-                );
-                const whatsappUrl = `https://wa.me/573138000536?text=${encodedMessage}`;
-
-                return (
-                  <li key={index}>
-                    <a
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-[#56DDA7] transition-colors duration-200"
-                    >
-                      {serviceName}
-                    </a>
-                  </li>
-                );
-              })}
+              {services.map((serviceName, index) => (
+                <li key={index}>
+                  <Botton
+                    label={serviceName}
+                    baseMessage="Hola, estoy interesado en el Servicio Técnico de: "
+                  />
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -66,27 +32,14 @@ export const Footer = () => {
               Accesorios
             </h4>
             <ul className="space-y-2 text-sm">
-              {accessories.map((serviceName, index) => {
-                const baseMessage =
-                  'Hola, estoy interesado en el servicio de: ';
-                const encodedMessage = encodeURIComponent(
-                  baseMessage + serviceName,
-                );
-                const whatsappUrl = `https://wa.me/573138000536?text=${encodedMessage}`;
-
-                return (
-                  <li key={index}>
-                    <a
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-[#56DDA7] transition-colors duration-200"
-                    >
-                      {serviceName}
-                    </a>
-                  </li>
-                );
-              })}
+              {accessories.map((serviceName, index) => (
+                <li key={index}>
+                  <Botton
+                    label={serviceName}
+                    baseMessage="Hola, quiero información sobre accesorios de celulares"
+                  />
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -94,27 +47,14 @@ export const Footer = () => {
               Computadores
             </h4>
             <ul className="space-y-2 text-sm">
-              {computers.map((serviceName, index) => {
-                const baseMessage =
-                  'Hola, estoy interesado en el servicio de: ';
-                const encodedMessage = encodeURIComponent(
-                  baseMessage + serviceName,
-                );
-                const whatsappUrl = `https://wa.me/573138000536?text=${encodedMessage}`;
-
-                return (
-                  <li key={index}>
-                    <a
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-[#56DDA7] transition-colors duration-200"
-                    >
-                      {serviceName}
-                    </a>
-                  </li>
-                );
-              })}
+              {computers.map((serviceName, index) => (
+                <li key={index}>
+                  <Botton
+                    label={serviceName}
+                    baseMessage="Hola, estoy interesado en el Servicio Técnico de: "
+                  />
+                </li>
+              ))}
             </ul>
           </div>
         </div>

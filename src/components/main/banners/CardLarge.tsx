@@ -85,14 +85,6 @@ export const CardLarge = () => {
           <p className="text-base sm:text-xl font-light mb-8 max-w-2xl mx-auto">
             {slide.description}
           </p>
-
-          {/* Botones */}
-          <div className="flex justify-center space-x-4">
-            <button className="py-3 px-8 inline-block cursor-pointer border-2 border-[#56DDA7] text-sm hover:bg-[#56DDA7] hover:text-black rounded-full font-semibold transition transform duration-300 hover:scale-110">
-              {/* Shop {slide.subtitle} */}
-              {slide.buttonPrimary}
-            </button>
-          </div>
         </div>
       </div>
 
