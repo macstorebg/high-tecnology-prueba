@@ -5,9 +5,10 @@ interface ModalCardProps {
   title: string;
   subTitle: string;
   list: string[];
+  phone: string;
 }
 
-export const ModalCard = ({ hadleOpen, title, list, subTitle }: ModalCardProps) => {
+export const ModalCard = ({ hadleOpen, title, list, subTitle, phone }: ModalCardProps) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/65 backdrop-blur-sm  bg-opacity-70 transition-opacity">
       {/* Fondo o 'Overlay' para cerrar al hacer clic afuera */}
@@ -55,6 +56,7 @@ export const ModalCard = ({ hadleOpen, title, list, subTitle }: ModalCardProps) 
                 <Botton
                   label={item}
                   baseMessage="Hola, quiero información sobre "
+                  phone={phone}
                 />
               </li>
             ))}
