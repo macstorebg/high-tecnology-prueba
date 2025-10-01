@@ -55,7 +55,7 @@ export const ModalCard = ({ hadleOpen, title, list, subTitle, phone }: ModalCard
               <li key={index}>
                 <Botton
                   label={item}
-                  baseMessage="Hola, quiero información sobre "
+                  baseMessage="Hola, estoy interesado en los accesorios para"
                   phone={phone}
                 />
               </li>
