@@ -39,7 +39,10 @@ export const Featured = () => {
 
       <div className='absolute top-0 z-10 opacity-80 bg-gradient-to-r from-black from-30% bg-transparent w-full h-full'></div>
       <video autoPlay loop muted className='absolute top-0 z-0 w-full h-full object-cover max-w-none'>
-        <source src={Video} type="video/mp4" />
+        <source 
+          src={Video} 
+          type="video/mp4" 
+          />
       </video>
     </div>
   );

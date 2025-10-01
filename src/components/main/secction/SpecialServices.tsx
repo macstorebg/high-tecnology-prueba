@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { secction, serviceData, type ServiceKey } from './Services';
 import { ButtonCta } from '../../ui/ButtonCta';
 
+
 export const SpecialServices = () => {
   const [activeSection, setActiveSection] = useState<ServiceKey>(
     secction[0].key as ServiceKey,
@@ -9,7 +10,9 @@ export const SpecialServices = () => {
 
   const currentService = serviceData[activeSection];
 
+
   const { description, title, image, whatsappMessage  } = currentService;
+
 
   return (
     <div>
@@ -45,6 +48,7 @@ export const SpecialServices = () => {
                   <img
                     src={image}
                     alt={title}
+                    loading='lazy'
                     className="w-full h-64 md:h-80 object-cover"
                   />
                 </div>
