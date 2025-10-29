@@ -24,7 +24,7 @@ export const accessories: string[] = [
   'Audífonos',
   'Cables y Adaptadores',
   'Fundas y Estuches',
-  'Bocinas / Bafles', // Alternativa a Bafles
+  'Bocinas / Bafles',
 ];
 
 export const computers: string[] = [
@@ -39,10 +39,10 @@ export const computers: string[] = [
   'Reemplazo de Teclado',
 ];
 
-export const redes: string[] = [
-  'Instagram',
-  'Facebook',
-  'Email',
-  'Soporte Técnico',
-  'Asistencia en Ventas',
-]
+// export const redes: string[] = [
+//   'Instagram',
+//   'Facebook',
+//   'Email',
+//   'Soporte Técnico',
+//   'Asistencia en Ventas',
+// ]

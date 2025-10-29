@@ -3,10 +3,9 @@ import SliderOne from '../../../assets/images/slider1.1.jpg';
 import SliderTwo from '../../../assets/images/slider2.2.jpg';
 import SliderThree from '../../../assets/images/repair/slider3.png';
 
-// --- 1. Define los datos del carrusel ---
 const slides = [
   {
-    image: SliderOne, // Reemplaza con tus rutas
+    image: SliderOne,
     subtitle: 'Compromiso Total',
     title: 'Calidad que Supera tus Expectativas',
     description:
@@ -34,7 +33,6 @@ const slides = [
 export const CardLarge = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Lógica para el cambio automático de slide cada 5 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);

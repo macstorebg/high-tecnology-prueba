@@ -12,7 +12,8 @@ export const Footer = () => {
               Servicio técnico profesional y express para móviles y equipos de
               cómputo. Confianza y calidad garantizada.
             </p>
-            <img src={Logo} alt="Imagen logo" className="size-40" />
+     
+     DFFFFD       <img src={Logo} alt="Imagen logo" className="size-40" />
           </div>
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Servicios</h4>
@@ -88,4 +89,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-};
+};5ÑY
